@@ -1,0 +1,9 @@
+
+# ignore virtual evnvironment
+venv/
+
+# ignore pychache folder
+*/__pycache__
+
+# ignore test files
+test/
