@@ -16,5 +16,10 @@
     - [x] makexl.py
     - [x] makemat.py
 - [x] scipy.io.savemat for .mat MATLAB files!
-- [ ] in parse.py make seperator flexible
+- [ ] make seperator flexible
 - [ ] check for filetype before parse
+- [ ] Graphs
+  - [ ] plot mutiple variables on one graph
+  - [ ] make plot title and and axes titles editable?
+- [ ] "\*\*\*End_of_Header\*\*\*\\t\\t" changes each time
+  - dependent on number of columns I think
