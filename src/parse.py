@@ -18,7 +18,6 @@ def colect_data(lines, start_idx):
             break
     array = np.array(datapoints)
 
-    # return array.transpose(), line_num    # Not sure if i should transpose or not
     return array, line_num
 
 
@@ -30,8 +29,15 @@ def parse_lvm(filename):
     
     data_list = []
     line_num = 0
+    num_cols = 0
     while line_num < len(lines):
-        if lines[line_num] == '***End_of_Header***\t\t':
+
+        # Get Channel size
+        if lines[line_num].split('\t')[0] == 'Channels':
+            num_cols = int(lines[line_num].split('\t')[1]) + 1          # number of columns is channnel size + 1
+        
+        # find "End_of_Header" and collect data
+        if lines[line_num] == '***End_of_Header***' + ('\t'*num_cols):  # ignore the first end_header and catch the rest
             data, last = colect_data(lines, line_num+2)
             data_list.append(data)
             line_num = last
