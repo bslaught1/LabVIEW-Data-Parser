@@ -21,7 +21,7 @@
 - [ ] Graphs
   - [ ] plot multiple variables on one graph
   - [ ] make plot title and and axes titles editable?
-- [ ] "\*\*\*End_of_Header\*\*\*\\t\\t" changes each time
+- [x] "\*\*\*End_of_Header\*\*\*\\t\\t" changes each time
   - dependent on number of columns I think
 - [ ] Change variable names from (xyzabc..) to column names given in lvm doc
   - [ ] add variable names to xl files (not sure why they weren't there before)
