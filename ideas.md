@@ -2,7 +2,7 @@
 
 - [x] choose where you can put data
   - [x] csv
-  - [x] excell
+  - [x] excel
   - [x] graph on matplot lib
 - [x] Tells you number of data arrays
   - [x] and detail about each array
@@ -10,16 +10,19 @@
   - [x] main.py
   - [x] parse.py
   - [x] plot.py (
-    - [ ] could posibly move to parse? (and rename to someting)
+    - [ ] could possibly move to parse? (and rename to something)
   - [x] savefile (all in one file)
     - [x] makecsv.py
     - [x] makexl.py
     - [x] makemat.py
 - [x] scipy.io.savemat for .mat MATLAB files!
-- [ ] make seperator flexible
+- [ ] make separator flexible
 - [ ] check for filetype before parse
 - [ ] Graphs
-  - [ ] plot mutiple variables on one graph
+  - [ ] plot multiple variables on one graph
   - [ ] make plot title and and axes titles editable?
 - [ ] "\*\*\*End_of_Header\*\*\*\\t\\t" changes each time
   - dependent on number of columns I think
+- [ ] Change variable names from (xyzabc..) to column names given in lvm doc
+  - [ ] add variable names to xl files (not sure why they weren't there before)
+  - [ ] maybe also keep track of units from "y_unit_label" and "x_unit_label"
